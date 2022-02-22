@@ -26,12 +26,12 @@ fn main() {
         //    let cls = v.get(i).unwrap();
         //    cls.validation();
         //}
-        while let Some(top) = v.pop() {
-            top.validation();
-        }
-        //for top in v.iter() {
+        //while let Some(top) = v.pop() {
         //    top.validation();
         //}
+        for top in v.iter() {
+            top.validation();
+        }
         let now2 = std::time::Instant::now().duration_since(now).as_nanos();
         println!("==> {}", now2);
     }
