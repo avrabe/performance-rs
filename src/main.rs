@@ -5,7 +5,6 @@ struct Class {
 impl Class {
     fn new(_name: &str, _foo: &str, _counter: u32) -> Self {
         Self {
-
         }
     }
 
@@ -23,13 +22,13 @@ fn main() {
             v.push(Class::new("fname", "fname", i % 30));
         }
 
-        for i in 0..100 {
-            let cls = v.get(i).unwrap();
-            cls.validation();
-        }
-        //while let Some(top) = v.pop() {
-        //    top.validation();
+        //for i in 0..100 {
+        //    let cls = v.get(i).unwrap();
+        //    cls.validation();
         //}
+        while let Some(top) = v.pop() {
+            top.validation();
+        }
         //for top in v.iter() {
         //    top.validation();
         //}
